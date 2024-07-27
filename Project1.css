@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 220%;
+    padding: 12px;
+    font-family: "Inter", sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(3,10vw);
+grid-template-rows: repeat(3,10vw);
+font-family: "Inter", sans-serif;
+}
+
+.box{
+border: 2px solid black;
+font-size: 8vw;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.gameInfo{
+    margin:0 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.gameInfo h1{
+    font-size: 170%;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left:0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.info{
+    font-size: 140%;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 12px;
+}
+
+#reset{
+    color: white;
+    padding-top: 7px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    background-color: rgb(111, 111, 233);
+    font-size: 160%;
+    border-radius: 20px;
+    width: 160%;
+    margin-left: -25px;
+}
+
+@media screen and (max-width:800px) {
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+
+    .gameInfo h1{
+        font-size:1.5rem;
+    }
+}
